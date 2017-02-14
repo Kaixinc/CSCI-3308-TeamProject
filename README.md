@@ -1,6 +1,6 @@
 # CSCI-3308-TeamProject
 
-#Team members:**<br>
+#Team members:<br>
 Siqi Feng, GitHub user name: siqi77feng<br>
 Kaixin Chen, GitHub user name: kaixinc<br>
 Jiawen Liu, GitHub user name:jiawen1 <br>
