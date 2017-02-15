@@ -14,6 +14,7 @@ Trevor Stephens, GitHub user name:codewalker<br><br>
 1. Project will be based on Java but only half of our group have learned java before.<br>
 2. No prior experience working with the people on the team.<br>
 3. Lake of experience on building a Chrome extension.<br>
+
 #Mitigation strategy:<br><br>
 1. Learn Java and how to make Chromeextension from online tutorial<br>
 2. Allocate the works properly based on each member's experience on Java.<br>
