@@ -44,6 +44,11 @@ A wish list of a certain online shopping website can only save the items of that
 
 5. As a developer, I want to utilize an environment that has clear and extensive documentation so that development does not waste time.<br>     
 6. As a non-associated developer, I want to be able to see the software's code so I can give constructive feedback to make the extension better.<br>  
+ #Project Tracking software: <br><br>
+ 1. we will use the Trello to track our project. Here is the link: https://trello.com/b/PyUQHOBa/group-project-for-csci3308
+ 
+ 
+ 
  
 
 
