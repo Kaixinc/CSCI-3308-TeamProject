@@ -4,7 +4,7 @@
 Siqi Feng, GitHub user name: siqi77feng<br>
 Kaixin Chen, GitHub user name: kaixinc<br>
 Jiawen Liu, GitHub user name:jiawen1 <br>
-Trevor Stephens<br><br>
+Trevor Stephens, GitHub user name:codewalker<br><br>
 
 #Title:<br><br>
 #Description:<br><br>
