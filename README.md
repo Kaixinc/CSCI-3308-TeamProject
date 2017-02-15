@@ -6,10 +6,23 @@ Kaixin Chen, GitHub user name: kaixinc<br>
 Jiawen Liu, GitHub user name:jiawen1 <br>
 Trevor Stephens, GitHub user name:codewalker<br><br>
 
-#Title:<br><br>
-#Description:<br><br>
-#Vision statement:<br><br>
-#Motivation:<br><br>
+#Title:<br>
+Make your wish lists come true - Google Chrome Extension<br><br>
+
+#Description:<br>
+This is a Google Chrome extension that does the following jobs: <br>
+1.	Save the item that the users want to purchase into a wish list, that item could be from any website; <br>
+2.	The users can create tabs of different categories to save the items in; <br>
+3.	The users can give short names of the items they are interest in to purchase; <br>
+4.	The wish lists will be saved when the users exit Google Chrome.<br><br>
+
+#Vision statement:<br>
+We save all your wish lists. Because when you have money, there is always something you want to buy. <br><br>
+
+#Motivation:<br>
+A wish list of a certain online shopping website can only save the items of that specific website. When it comes to purchase, buyers would have to go to different shopping websites first, then check the wish lists. That costs time and sometimes difficult to remember at which website you have the wish lists saved. Our product means to save shoppers’ time and helps the shoppers to easily find what they liked.
+<br><br>
+
 #Risks:<br><br>
 1. Project will be based on Java but only half of our group have learned java before.<br>
 2. No prior experience working with the people on the team.<br>
@@ -33,6 +46,4 @@ Trevor Stephens, GitHub user name:codewalker<br><br>
 6. As a non-associated developer, I want to be able to see the software's code so I can give constructive feedback to make the extension better.<br>  
  
 
-Siqi Feng<br>
-As a [开心的爸爸].I want to [训儿子] so that i can [辱骂他]<br><br>
 
