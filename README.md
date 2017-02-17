@@ -24,12 +24,12 @@ A wish list of a certain online shopping website can only save the items of that
 <br><br>
 
 #Risks:<br><br>
-1. Project will be based on Java but only half of our group have learned java before.<br>
+1. Project will be based on Java but only half of our group have experienced Java before.<br>
 2. No prior experience working with the people on the team.<br>
-3. Lake of experience on building a Chrome extension.<br>
+3. Lack of experience on building a Chrome extension.<br>
 
 #Mitigation strategy:<br><br>
-1. Learn Java and how to make Chromeextension from online tutorial<br>
+1. Learn Java and how to make Chrome extension from online tutorial<br>
 2. Allocate the works properly based on each member's experience on Java.<br>
 3. Hold group meeting oftenly<br>
 
