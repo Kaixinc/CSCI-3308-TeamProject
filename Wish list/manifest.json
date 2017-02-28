@@ -1,0 +1,30 @@
+﻿{
+	"name": "Wish List",
+	"icons" : {
+		"47"	: "icon47.png"
+	},
+	"version": "0.00.001",
+	"manifest_version": 2,
+	"description": "Project for 3308",
+	"web_accessible_resources":["icon/*.png","music/*.mp3","RemoteLocaljs/*.js","img/*.png","css/*.css"],
+	"permissions": ["tabs","activeTab"],
+	//"background": {
+	//	"scripts": ["background.js","jquery.js"]
+	//},
+	//"options_page": "options.html",
+	//"content_scripts": [
+		//{
+			//"matches": ["*://??/*","*://??/*"],
+			//"js": ["??",]
+	//	},{
+	//		"matches": ["*://??/*"],
+	//		"js": ["??],
+	//		"run_at": "document_start"
+//		}
+//	],
+	"browser_action" : {
+		"default_icon" : "icon47.png",
+		"default_title" : "laoziwudi",
+		"default_popup" : "popup.html"
+	}
+}
