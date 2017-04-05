@@ -51,25 +51,25 @@ A wish list of a certain online shopping website can only save the items of that
  1. Because our project is a Chrome Web extension which we need serval different language to achieve it such as HTML, CSS, Javacript, so it's hard to find one automated test online. Therefore if we want to test it, then input some data and so the website. <br>
  
  #User Acceptance Tests: <br><br>
- 1. Use case name
-     Verify login with valid user name and password
-    Description
-     Test the login page
-    Pre-conditions
-     User has valid user name and password
-    Test steps
-     1. Navigate to login page
-     2. Provide valid user name
-     3. Provide valid password
-     4. Click login button
-    Expected result
-     User should be able to login
-    Actual result
-     Fail
-    Notes
-     N/A
-    Post-conditions
-     it's unsuccessfully signed into their account. Some error happens in the navigate process.
+ 1. Use case name: <br>
+     Verify login with valid user name and password<br>
+    Description: <br>
+     Test the login page<br>
+    Pre-conditions: <br>
+     User has valid user name and password<br>
+    Test steps:<br>
+     1. Navigate to login page<br>
+     2. Provide valid user name<br>
+     3. Provide valid password<br>
+     4. Click login button<br>
+    Expected result: <br>
+     User should be able to login<br>
+    Actual result: <br>
+     Fail<br>
+    Notes: <br>
+     N/A<br>
+    Post-conditions: <br>
+     it's unsuccessfully signed into their account. Some error happens in the navigate process.<br>
   2. Use case name
     Verify create/update/delete item in personal table
 Description
