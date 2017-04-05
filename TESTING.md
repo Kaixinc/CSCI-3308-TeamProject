@@ -71,46 +71,47 @@ A wish list of a certain online shopping website can only save the items of that
     Post-conditions: <br>
      it's unsuccessfully signed into their account. Some error happens in the navigate process.<br>
   2. Use case name: <br>
-    Verify create/update/delete item in personal table <br>
-Description: <br>
-    Test the database<br>
-Pre-conditions: <br>
-    User has his own table already<br>
-Test steps: <br>
-    1. create items<br>
-    2. delete items<br>
-    3. update items<br>
+      Verify create/update/delete item in personal table <br>
+    Description: <br>
+     Test the database<br>
+    Pre-conditions: <br>
+     User has his own table already<br>
+    Test steps: <br>
+     1. create items<br>
+     2. delete items<br>
+     3. update items<br>
     
-Expected result: <br>
-    User should be able to create, delete, or update list<br>
-Actual result: <br>
-    User cannot achieve it<br>
-Status (Pass/Fail): <br>
-    Fail<br>
-Notes: <br>
-    N/A <br>
-Post-conditions: <br>
-    NONE<br>
+    Expected result: <br>
+     User should be able to create, delete, or update list<br>
+    Actual result: <br>
+     User cannot achieve it<br>
+    Status (Pass/Fail): <br>
+     Fail<br>
+    Notes: <br>
+     N/A <br>
+    Post-conditions: <br>
+     NONE<br>
     
  3. Use case name: <br>
-    Verify search function<br>
-Description: <br>
-    Test if user coould search items on the website<br>
-Pre-conditions: <br>
-    User has own wish list already<br>
-Test steps: <br>
-    1. enter data on list<br>
-    2. input letter in search blank<br>
-Expected result: <br>
-    User should be see the specific item<br>
-Actual result: <br>
-    User see the item he wants to check<br>
-Status (Pass/Fail): <br>
-    Pass<br>
-Notes: <br>
-    N/A<br>
-Post-conditions:<br>
-    User could find speical item by using "search by name"<br>
+     Verify search function<br>
+    Description: <br>
+     Test if user coould search items on the website<br>
+    Pre-conditions: <br>
+     User has own wish list already<br>
+    Test steps: <br>
+     1. enter data on list<br>
+     2. input letter in search blank<br>
+    Expected result: <br>
+     User should be see the specific item<br>
+    Actual result: <br>
+     User see the item he wants to check<br>
+    Status (Pass/Fail): <br>
+     Pass<br>
+    Notes: <br>
+     N/A<br>
+    Post-conditions:<br>
+     User could find speical item by using "search by name"<br>
+   <br><br>
 
 
  
