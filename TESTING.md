@@ -52,24 +52,24 @@ A wish list of a certain online shopping website can only save the items of that
  
  #User Acceptance Tests: <br><br>
  1. Use case name
-    Verify login with valid user name and password
-Description
-    Test the login page
-Pre-conditions
-    User has valid user name and password
-Test steps
-    1. Navigate to login page
-    2. Provide valid user name
-    3. Provide valid password
-    4. Click login button
-Expected result
-    User should be able to login
-Actual result
-    Fail
-Notes
-    N/A
-Post-conditions
-    it's unsuccessfully signed into their account. Some error happens in the navigate process.
+     Verify login with valid user name and password
+    Description
+     Test the login page
+    Pre-conditions
+     User has valid user name and password
+    Test steps
+     1. Navigate to login page
+     2. Provide valid user name
+     3. Provide valid password
+     4. Click login button
+    Expected result
+     User should be able to login
+    Actual result
+     Fail
+    Notes
+     N/A
+    Post-conditions
+     it's unsuccessfully signed into their account. Some error happens in the navigate process.
   2. Use case name
     Verify create/update/delete item in personal table
 Description
