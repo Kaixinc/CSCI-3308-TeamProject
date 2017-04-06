@@ -1,0 +1,24 @@
+
+
+{
+  "name": "Wish List",
+  "manifest_version" : 2,
+  "version": "1.0",
+  "description": "Make your wish list become true",
+  "icons": { "223": "icon_223.png" },
+  "background": {
+    "scripts": ["eventPage.js"],
+    "persistent": false
+    //background page: event page; Event pages are opened and closed as needed
+  },
+  "browser_action": {
+    "default_title": "Wish List",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["tabs"],
+  "browser_action": {
+    "default_title": "",
+    "default_icon": "icon_223.png",
+    "default_popup": "popup.html"
+  }
+}
