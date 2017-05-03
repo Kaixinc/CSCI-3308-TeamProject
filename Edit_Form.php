@@ -62,6 +62,27 @@
     </div>
 	</center>
     <?php
+        if (isset($_POST['txtid'])) {   
+        $id = $_POST['txtid'];
+        }
+        if (isset($_POST['txtname'])) {   
+        $name = $_POST['txtname'];
+        }
+        if (isset($_POST['txtonsale'])) {  
+        $onsale = $_POST['txtonsale'];
+        }
+        if (isset($_POST['txtprice'])) {
+        $price = $_POST['txtprice'];
+        }
+        if (isset($_POST['txtdescription'])) {
+        $description = $_POST['txtdescription'];
+        }
+        if (isset($_POST['txtcategory'])) {
+        $category = $_POST['txtcategory'];
+        }
+        if (isset($_POST['txtdate'])) {
+        $date = $_POST['txtdate'];
+        }
         include ("connect.php");
         $p = mysql_query("update wishlist set name='".$_POST['txtname']."', onsale='".$_POST['txtonsale']."', price='".$_POST['txtprice']."', description='".trim($_POST['txtdescription'])."', category='".$_POST['txtcategory']."', date='".$_POST['txtdate']."' WHERE id='".$id."'");
         if($p==true){
