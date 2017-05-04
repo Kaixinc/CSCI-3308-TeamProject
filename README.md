@@ -27,9 +27,12 @@ A wish list of a certain online shopping website can only save the items of that
 link to Project Tracker: https://trello.com/b/PyUQHOBa/group-project-for-csci3308<br>
 Also see the Trello screeen shots in file Screeen_shots_tests.<br><br>
 
-# Methodology
-Our team are using a agile format where we add and test smaller features over time rather than doing all tasks at once.
+# Methodology:<br>
+Our team are using a agile format where we add and test smaller features over time rather than doing all tasks at once.<br><br>
 
-# Repository Organization
+# Repository Organization:<br>
 
-# How to run
+# How to Run:<br>
+
+1. Please view the demo video showing features and navigation.<br>
+2. To view page:<br>
