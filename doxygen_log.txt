@@ -4,7 +4,10 @@
 # Project related configuration options
 #---------------------------------------------------------------------------
 DOXYFILE_ENCODING      = UTF-8
-PROJECT_NAME           = "My Project"
+PROJECT_NAME           = "Make your wish list come true"
+
+#The PROJECT_NAME tag is a single or a sequence word that should identify the project
+ 
 PROJECT_NUMBER         = 
 PROJECT_BRIEF          = 
 PROJECT_LOGO           = 
@@ -13,6 +16,11 @@ CREATE_SUBDIRS         = NO
 ALLOW_UNICODE_NAMES    = NO
 OUTPUT_LANGUAGE        = English
 BRIEF_MEMBER_DESC      = YES
+
+# If the BRIEF_MEMBER_DESC tag is set to YES (the default) Doxygen will
+# include brief member descriptions after the members that are listed in
+# the file and class documentation (similar to JavaDoc)
+
 REPEAT_BRIEF           = YES
 ABBREVIATE_BRIEF       = "The $name class" \
                          "The $name widget" \
@@ -26,15 +34,38 @@ ABBREVIATE_BRIEF       = "The $name class" \
                          an \
                          the
 ALWAYS_DETAILED_SEC    = NO
+
+# If the ALWAYS_DETAILED_SEC and REPEAT_BRIEF tags are both set to YES then
+# Doxygen will generate a detailed section even if there is only a brief
+# description
+#In our code, we don't have a description becuase ALWAYS_DETAILED_SEC = NO
+
 INLINE_INHERITED_MEMB  = NO
 FULL_PATH_NAMES        = YES
+
+# If the FULL_PATH_NAMES tag is set to YES then Doxygen will prepend the full
+# path before files name in the file list and in the header files. If set
+# to NO the shortest path that makes the file name unique will be used.
+
 STRIP_FROM_PATH        = 
+
+# The INTERNAL_DOCS tag determines if documentation
+# that is typed after a \internal command is included. If the tag is set
+# to NO (the default) then the documentation will be excluded.
+# Set it to YES to include the internal documentation.
+#something wrong with here because it should have an answer: Yes or No, however now we have nothing
+
 STRIP_FROM_INC_PATH    = 
 SHORT_NAMES            = NO
 JAVADOC_AUTOBRIEF      = NO
 QT_AUTOBRIEF           = NO
 MULTILINE_CPP_IS_BRIEF = NO
 INHERIT_DOCS           = YES
+
+# If the INHERIT_DOCS tag is set to YES (the default) then an undocumented
+# member inherits the documentation from any documented member that it
+# reimplements
+
 SEPARATE_MEMBER_PAGES  = NO
 TAB_SIZE               = 4
 ALIASES                = 
@@ -107,6 +138,11 @@ WARN_IF_DOC_ERROR      = YES
 WARN_NO_PARAMDOC       = NO
 WARN_AS_ERROR          = NO
 WARN_FORMAT            = "$file:$line: $text"
+
+# The WARN_LOGFILE tag can be used to specify a file to which warning
+# and error messages should be written. If left blank the output is written
+# to stderr.
+
 WARN_LOGFILE           = 
 #---------------------------------------------------------------------------
 # Configuration options related to the input files
@@ -194,6 +230,10 @@ IGNORE_PREFIX          =
 # Configuration options related to the HTML output
 #---------------------------------------------------------------------------
 GENERATE_HTML          = YES
+
+# If the GENERATE_HTML tag is set to YES (the default) Doxygen will
+# generate HTML output.
+
 HTML_OUTPUT            = html
 HTML_FILE_EXTENSION    = .html
 HTML_HEADER            = 
@@ -344,6 +384,17 @@ DOT_FONTNAME           = Helvetica
 DOT_FONTSIZE           = 10
 DOT_FONTPATH           = 
 CLASS_GRAPH            = YES
+
+
+# If the CLASS_GRAPH and HAVE_DOT tags are set to YES then doxygen
+# will generate a graph for each documented class showing the direct and
+# indirect inheritance relations. Setting this tag to YES will force the
+# the CLASS_DIAGRAMS tag to NO.
+# If the COLLABORATION_GRAPH and HAVE_DOT tags are set to YES then doxygen
+# will generate a graph for each documented class showing the direct and
+# indirect implementation dependencies (inheritance, containment, and
+# class references variables) of the class with other documented classes.
+
 COLLABORATION_GRAPH    = YES
 GROUP_GRAPHS           = YES
 UML_LOOK               = NO
@@ -351,6 +402,10 @@ UML_LIMIT_NUM_FIELDS   = 10
 TEMPLATE_RELATIONS     = NO
 INCLUDE_GRAPH          = YES
 INCLUDED_BY_GRAPH      = YES
+
+# If the GRAPHICAL_HIERARCHY and HAVE_DOT tags are set to YES then doxygen
+# will graphical hierarchy of all classes instead of a textual one.
+
 CALL_GRAPH             = NO
 CALLER_GRAPH           = NO
 GRAPHICAL_HIERARCHY    = YES
