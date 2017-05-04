@@ -15,13 +15,13 @@
     	<?php
 		$id = $_GET['txtid'];
 		include ("connect.php");
-		$i ="select * from wishlist where txtid=".$id;
+		$i ="select * from tbl_student where stuid=".$id;
 		$h= mysql_query($i);
 		if($tr=mysql_fetch_array($h))
 		{
 	?>
     <table><form method="post" action="">
-		<tr>
+    	<tr>
         	<th>ID:</th>
         	<td><input type="text" name="txtid" value="<?php echo $tr[0]; ?>"/></td>
         </tr>
@@ -48,7 +48,7 @@
         	<td><input type="text" name="txtcategory" value="<?php echo $tr[5]; ?>" /></td>
         </tr>            
         <tr>
-        	<th>Register Date:</th>
+        	<th>Edited Date:</th>
             <td><input type="text" name="txtdate" value="<?php echo $tr[6];?>"/></td>
         </tr>
             <?php
@@ -60,32 +60,11 @@
         </tr>
 	</form></table>
     </div>
-	</center>
+    </center>
     <?php
-        if (isset($_POST['txtid'])) {   
-        $id = $_POST['txtid'];
-        }
-        if (isset($_POST['txtname'])) {   
-        $name = $_POST['txtname'];
-        }
-        if (isset($_POST['txtonsale'])) {  
-        $onsale = $_POST['txtonsale'];
-        }
-        if (isset($_POST['txtprice'])) {
-        $price = $_POST['txtprice'];
-        }
-        if (isset($_POST['txtdescription'])) {
-        $description = $_POST['txtdescription'];
-        }
-        if (isset($_POST['txtcategory'])) {
-        $category = $_POST['txtcategory'];
-        }
-        if (isset($_POST['txtdate'])) {
-        $date = $_POST['txtdate'];
-        }
         include ("connect.php");
-        $p = mysql_query("update wishlist set name='".$_POST['txtname']."', onsale='".$_POST['txtonsale']."', price='".$_POST['txtprice']."', description='".trim($_POST['txtdescription'])."', category='".$_POST['txtcategory']."', date='".$_POST['txtdate']."' WHERE id='".$id."'");
-        if($p==true){
+        $i = mysql_query("update tbl_student set name='".$_POST['txtname']."', onsale='".$_POST['txtonsale']."', price='".$_POST['txtprice']."', description='".trim($_POST['txtdescription'])."', category='".$_POST['txtcategory']."', date='".$_POST['txtdate']."' where id=".$_POST['txtid']);
+        if($i==true){
         echo '<META HTTP-EQUIV="Refresh" Content="0; URL=index.php">';
         }
         //header('Location::index.php');
