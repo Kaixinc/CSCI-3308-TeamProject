@@ -35,4 +35,4 @@ Our team are using a agile format where we add and test smaller features over ti
 # How to Run:<br>
 
 1. Please view the demo video showing features and navigation.<br>
-2. To view page:<br>
+2. To view page:http://www.laoziwudi.xyz<br>
