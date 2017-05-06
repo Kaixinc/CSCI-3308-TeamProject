@@ -10,27 +10,23 @@
 <div class="img"><img src="Images/auditoria.png" /></div>
 <div class="ii"><center><img src="Images/Edit_Yes.png" style="margin-top:20px"/></center></div>
 <div id="topbar">
+
     	<center><h1 style="color:#939">Welcome to Add Form</h1>
     </div>
 <div id="form">
 		<table>
         	<form method="post" action="">
             	<tr>
-                
+
         <?php
-               $link = mysqli_connect('mysql.hostinger.com', 'u370150055_chen', 'abcd1234', 'u370150055_test');
-
-              if (!$link) {
-              die('Connect Error (' . mysqli_connect_errno() . ') '
-            . mysqli_connect_error());
-}
-
-              echo 'Success... ' . mysqli_get_host_info($link) . "\n";
-					$g = mysqli_query($link, "select max(txtid) from wishlist");
+              include ("connect.php");
+              session_start();
+                    $table = $_SESSION['fku'];
+					$g = mysqli_query($link, "select max(txtid) from `".$_SESSION['fku']."`");
 					while($id=mysqli_fetch_array($g))
 					{
 				?>
-                
+
                 	<th>ID:</th>
                     <td><input type="text" name="txtid" value="<?php echo $id[0]+1; ?>" readonly="readonly" /></td>
                 </tr>
@@ -55,8 +51,8 @@
                     <td><input type="text" name="txtprice" placeholder="Type Price"  /></td>
                 </tr>
                 <tr>
-                	<th>Description:</th>
-                    <td><textarea cols="19px" rows="3" name="txtdescription" placeholder="Type Description of Good In Your Wishlist"  /></textarea></td>
+                	<th>URL:</th>
+                    <td><textarea cols="19px" rows="3" name="txtdescription" placeholder="Copy and paste your wishlist url here(https:// required)"  /></textarea></td>
                 </tr>
                 <tr>
                     <th>Category:</th>
@@ -67,7 +63,7 @@
                             	$s=array("Clothing","Appliance","Makeup","Decoration","Stationery","Furniture","Food","Daliy Supplies","Other");
 								for($i=0;$i<count($s);$i++)
 								{
-									echo "<option>".$s[$i]."</option>";	
+									echo "<option>".$s[$i]."</option>";
 								}
                             ?>
                         </select>
@@ -84,14 +80,14 @@
         	</form>
         </table>
     	</div>
-        <?php   
-        if (isset($_POST['txtid'])) {   
+        <?php
+        if (isset($_POST['txtid'])) {
         $id = $_POST['txtid'];
 		}
-		if (isset($_POST['txtname'])) {   
+		if (isset($_POST['txtname'])) {
         $name = trim($_POST['txtname']);
 		}
-		if (isset($_POST['txtonsale'])) {  
+		if (isset($_POST['txtonsale'])) {
         $onsale = trim($_POST['txtonsale']);
 		}
 		if (isset($_POST['txtprice'])) {
@@ -112,7 +108,7 @@
             echo "<center>Sorry please input data</center>";
         }else{
         include "connect.php";
-        $i = mysqli_query($link, "insert into wishlist values('".$id."','".$name."','".$onsale."','".$price."','".$description."','".$category."','".$date."')");
+        $i = mysqli_query($link, "insert into `".$_SESSION['fku']."` values('".$id."','".$name."','".$onsale."','".$price."','".$description."','".$category."','".$date."')");
         if($i==true){
         echo '<META HTTP-EQUIV="Refresh" Content="0; URL=index.php">';
         }

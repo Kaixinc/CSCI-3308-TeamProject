@@ -14,7 +14,6 @@
             . mysqli_connect_error());
 }
 
-              echo 'Success... ' . mysqli_get_host_info($link) . "\n";
 				?>
 </body>
 </html>

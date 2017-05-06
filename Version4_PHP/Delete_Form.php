@@ -9,16 +9,18 @@
 <body background="Images/MyBackground.png" bgcolor="#999966">
 	<div class="topbar"><center><h1 style="color:#FFF">Delete Form</h1></center></div>
 	<div id="box"><center>
-    
+	include "index.php";
+
     	<?php
-		
+
 			$id = $_GET['txtid'];
+			session_start();
 			include ("connect.php");
-			$h = mysqli_query($link,"select * from wishlist where txtid=".$id);
+			$h = mysqli_query($link,"select * from `".$_SESSION['fku']."` where txtid=".$id);
 			if($tr=mysqli_fetch_array($h))
 			{
 		?>
-    
+
 	<table>
     		<form method="post" action="">
     	<tr>
@@ -62,11 +64,11 @@
     </table></center>
 	</div>
         <?php
-        if (isset($_POST['txtid'])) {   
+        if (isset($_POST['txtid'])) {
         $id = $_POST['txtid'];
-		}       
+		}
         include("connect.php");
-        $i = mysqli_query($link,"delete from wishlist where txtid=".$id);
+        $i = mysqli_query($link,"delete from `".$_SESSION['fku']."` where txtid=".$id);
         if($i==true){
         echo '<META HTTP-EQUIV="Refresh" Content="0; URL=index.php">';
         }

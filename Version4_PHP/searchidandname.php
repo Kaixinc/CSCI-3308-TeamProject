@@ -21,10 +21,11 @@
             <th>Option</th>
         </tr>
     <?php
+    session_start();
 		$text = $_POST['txtsearch'];
 		if($text==""){
 			echo "No Data....Please Try Again!!!"."<br>";
-			echo '<a href="ViewTable.php"><img src="Images/Users_Group.png" title="Go Back"></a>';
+			echo '<a href="index.php"><img src="Images/Users_Group.png" title="Go Back"></a>';
 		}
 	?>
     <?php
@@ -35,7 +36,7 @@
     <?php
 		if($cbo=="ID")
 		{
-			$id = mysqli_query($link,"SELECT * FROM wishlist WHERE txtid='$search'");
+			$id = mysqli_query($link,"SELECT * FROM `".$_SESSION['fku']."` WHERE txtid='$search'");
 	?>
 
     <?php
@@ -56,7 +57,7 @@
 		}
 		}else if($cbo=="Name")
 		{
-			$na = mysqli_query($link,"SELECT * FROM wishlist WHERE name like '".$search."%'");
+			$na = mysqli_query($link,"SELECT * FROM `".$_SESSION['fku']."` WHERE name like '".$search."%'");
 	?>
     <?php
 		while($an=mysqli_fetch_array($na))
@@ -78,7 +79,7 @@
      <?php
 		}else if($cbo=="On Sale")
 				{
-        $add = mysqli_query($link, "SELECT * FROM wishlist WHERE onsale like '".$search."%'");
+        $add = mysqli_query($link, "SELECT * FROM `".$_SESSION['fku']."` WHERE onsale like '".$search."%'");
      ?>
 		<?php
 		while($dda=mysqli_fetch_array($add))
@@ -98,7 +99,7 @@
 				}
 			}else if($cbo=="Category")
 			{
-			$g = mysqli_query($link,"SELECT * FROM wishlist WHERE category like '".$search."%'");
+			$g = mysqli_query($link,"SELECT * FROM `".$_SESSION['fku']."` WHERE category like '".$search."%'");
 			?>
 			<?php
 				while($ge=mysqli_fetch_array($g))
