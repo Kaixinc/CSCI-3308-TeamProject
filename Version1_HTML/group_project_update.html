@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Make you online wish List</title>
+    <script type="text/javascript" src="app1.js"></script>
+    <h1>Your wish List table...</h1>
+</head>
+&nbsp;<br/>
+<body onload="load()">
+<div id="myform">
+<table>
+    <tr>
+        <td>Name:</td>
+        <td><input type="text" id="name"></td>
+    </tr>
+    <tr>
+        <td>Category:</td>
+        <td><input type="text" id="category"></td>
+    </tr>
+    <tr>
+        <td>Price:</td>
+        <td><input type="text" id="price"></td>
+    </tr>
+    <tr>
+        <td>Description:</td>
+        <td><input type="text" id="description"></td>
+    </tr>
+    <tr>
+        <td>Web_link:</td>
+        <td><input type="text" id="web_link">
+        <input type="button" id="add" value="Add" onclick="Javascript:addRow()"></td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+    </tr>
+</table>
+</div>
+<div id="mydata">
+<b>Current data in the system ...</b>
+<table id="myTableData"  border="1" cellpadding="2">
+    <tr>
+        <td>&nbsp;</td>
+        <td><b>Name</b></td>
+        <td><b>category</b></td>
+        <td><b>Price</b></td>
+        <td><b>Description</b></td>
+        <td><b>Web_link</b></td>
+    </tr>
+</table>
+&nbsp;<br/>
+</div>
+
+</body>
+</html>

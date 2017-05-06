@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<div class="w3-container w3-center w3-animate-top">
+  <h1>Wish List</h1>
+</div>
+</body>
+<body>
+</div>
+<div class="w3-container">
+<div class="w3-container">
+  <input class="w3-input w3-border w3-padding" type="text" placeholder="Search for names.." id="myInput" onkeyup="myFunction()">
+
+  <table class="w3-table-all w3-margin-top" id="myTable">
+    <tr>
+      <th style="width:10%;">Name</th>
+      <th style="width:10%;">Category</th>
+      <th style="width:20%;">Description</th>
+      <th style="width:10%;">Price</th>
+      <th style="width:30%;">Website_link</th>
+    </tr>
+    <tr>
+      <td>Germany</td>
+      <td>Clothing</td>
+      <td>Black</td>
+      <td>100$</td>
+    </tr>
+    <tr>
+      <td>Sweden</td>
+      <td>shoes</td>
+      <td>White</td>
+      <td>30$</td>
+    </tr>
+    <tr>
+      <td>UK</td>
+      <td>Luggage</td>
+      <td>Red</td>
+      <td>130$</td>
+    </tr>
+    <tr>
+      <td>Germany</td>
+      <td>Makeup: facial fundation</td>
+      <td>None</td>
+      <td>40$</td>
+    </tr>
+    <tr>
+      <td>Canada</td>
+      <td>Magnzine</td>
+      <td>world geography</td>
+      <td>24$</td>
+    </tr>
+    <tr>
+      <td>Italy</td>
+      <td>paper</td>
+      <td>for drawing class</td>
+      <td>13$</td>
+    </tr>
+    <tr>
+      <td>UK</td>
+      <td>book</td>
+      <td>textbook for data structure</td>
+      <td>120$</td>
+    </tr>
+    <tr>
+      <td>France</td>
+      <td>wine</td>
+      <td>celebrate for 21th birthday</td>
+      <td>50$</td>
+    </tr>
+  </tab
+</div>
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+
+</div>
+    <div style="background-color: #c3e2c5; margin: 20px; padding: 9px">
+      <h3 style="text-align: center; margin: 10px"> <a href="https://wishlist1.000webhostapp.com">Wish List</a></h3>
+      <div style="margin: 8px">
+        <div style="width: 500px; display: inline-block">
+          Name: <input style="width: 80px" type="text" id="Name_new" />
+          Category: <input style="width: 80px" type="text" id="Category_new" />
+          Price: <input style="width: 80px" type="text" id="price_new" />
+        </div>
+      </div>
+        <div>
+          <div style="width: 90px; display:inline-block">Description: </div>
+          <input style="width: 80%" type="text" id="Dscription_new" />
+        </div>
+        <div>
+          <div style="width: 100px; display:inline-block">Website_link:</div>
+          <input style="width: 79.3%" type="text" id="Website_link_new" />
+        </div>
+        <div><input type="checkbox" id="selected_new" /> Selected</div>
+      </div>
+      <button onclick="createTab();">Create</button>
+      <button onclick="createTab();">Update</button>
+      <button onclick="createTab();">Delete</button>
+    </div>
+</body>
+</html>
