@@ -31,6 +31,13 @@ Also see the Trello screeen shots in file Screeen_shots_tests.<br><br>
 Our team are using a agile format where we add and test smaller features over time rather than doing all tasks at once.<br><br>
 
 # Repository Organization:<br>
+Folders:
+-Auto-doc: auto-docs and the informations
+-Screen_shots_tests: Screen shots of our tests and our Trellow schedule screen shots
+-Version0 to Version4: Process of the whole project, Version4 as final
+-scr: Google login sources
+
+Files: Exactly as names show
 
 # How to Run:<br>
 
